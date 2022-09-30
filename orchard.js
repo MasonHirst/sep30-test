@@ -85,7 +85,7 @@ console.log(".....................................................")
 */
 
 // CODE HERE
-let averageDailyAcres = totalAcres / (fujiAcres.length + galaAcres.length + pinkAcres.length)
+let averageDailyAcres = totalAcres / 7
 console.log("Average acres picked per day:", averageDailyAcres)
 
 console.log(".....................................................")

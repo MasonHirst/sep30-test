@@ -23,9 +23,9 @@ colorCopy.push("blue")
 const numbers = [1, 2, 3, 4, 5]
 
 //CODE HERE
-// let middleNums = numbers.splice(1, 3)
+let middleNums = numbers.splice(1, 3)
 // console.log(numbers)
-// console.log(middleNums)
+console.log(middleNums)
 
 // I'm not sure if the original "numbers" array is supposed to unaltered after the new array is created. If it is, below is an alternate way to write it:
 
