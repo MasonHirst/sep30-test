@@ -63,7 +63,10 @@ for (let i = 0; i < pinkAcres.length; i++) {
     totalAcres += pinkAcres[i]
 }
 
-// console.log("total acres picked in the week:", totalAcres)
+console.log("total acres picked in the week:", totalAcres)
+
+console.log(".....................................................")
+
 
 // I felt that the easiest way for me to add all the values together was to make 3 for loops. Each for loop ran through one array, adding each value to the total acres variable. After all the loops ran, I logged the variable.
 
@@ -83,7 +86,10 @@ for (let i = 0; i < pinkAcres.length; i++) {
 
 // CODE HERE
 let averageDailyAcres = totalAcres / (fujiAcres.length + galaAcres.length + pinkAcres.length)
-//console.log("Average acres picked per day:", averageDailyAcres)
+console.log("Average acres picked per day:", averageDailyAcres)
+
+console.log(".....................................................")
+
 
 // This one was pretty simple. I already had a single variable for the total number of acres, so I could just then add up the lengths of the arrays, and divide the total acres by the sum lengths. The new variable for the average was set equal to this math problem.
 
@@ -126,7 +132,10 @@ while (acresLeft > 0) {
     acresLeft -= averageDailyAcres
     days++
 }
-//console.log("number of day:", days)
+console.log("number of day:", days)
+
+console.log(".....................................................")
+
 
 // In this problem, I made a while loop that continually subtracted the average apples picked per day from the new total acres, and then added 1 to the days count. It was set to run until the acres left was 0 or less. Doing this instead of simple division gave us a whole number instead of a decimal number.
 
@@ -160,21 +169,25 @@ let fujiTons = []
 for (let i = 0; i < fujiAcres.length; i++) {
     fujiTons.push(fujiAcres[i]  * 6.5)
 }
-//console.log("fuji acre tons picked/day:", fujiTons)
+console.log("fuji acre tons picked/day:", fujiTons)
 
 let galaTons = []
 for (let i = 0; i < galaAcres.length; i++) {
     galaTons.push(galaAcres[i]  * 6.5)
 }
-//console.log("gala acre tons picked/day:", galaTons)
+console.log("gala acre tons picked/day:", galaTons)
 
 let pinkTons = []
 for (let i = 0; i < pinkAcres.length; i++) {
     pinkTons.push(pinkAcres[i]  * 6.5)
 }
-//console.log("pink acre tons picked/day:", pinkTons)
+console.log("pink acre tons picked/day:", pinkTons)
 
-//console.log(fujiAcres, galaAcres, pinkAcres)
+// console.log(fujiAcres, galaAcres, pinkAcres)
+// the above console log is just to make sure that the original arrays were not affected.
+
+console.log(".....................................................")
+
 
 // In this problem, I made each ----Tons variable an array. Then I ran a for loop through the ----Acres arrays. The loops pushed each value in the ----Acres arrays into the ----Tons arrays, after multiplying it by 6.5 (tons per acre).
 
@@ -213,9 +226,11 @@ for (let i = 0; i < pinkTons.length; i++) {
     pinkPounds += pinkTons[i] * 2000
 }
 
-// console.log("pounds picked in fuji acres:", fujiPounds)
-// console.log("pounds picked in gala acres:", galaPounds)
-// console.log("pounds picked in pink acres:", pinkPounds)
+console.log("pounds picked in fuji acres:", fujiPounds)
+console.log("pounds picked in gala acres:", galaPounds)
+console.log("pounds picked in pink acres:", pinkPounds)
+
+console.log(".....................................................")
 
 // In this problem, I ran a for-loop through each ----Tons array. The loop took each value of the array, multiplied it by 2000, then added it to the ----Pounds variable. This converted the arrays into single numbers. 
 
@@ -244,9 +259,12 @@ let fujiProfit = fujiPrice * fujiPounds
 let galaProfit = galaPrice * galaPounds
 let pinkProfit = pinkPrice * pinkPounds
 
-// console.log("profit from fuji acres:", fujiProfit, "dollars")
-// console.log("profit from gala acres:", galaProfit, "dollars")
-// console.log("profit from pink acres:", pinkProfit, "dollars")
+console.log("profit from fuji acres:", fujiProfit, "dollars")
+console.log("profit from gala acres:", galaProfit, "dollars")
+console.log("profit from pink acres:", pinkProfit, "dollars")
+
+console.log(".....................................................")
+
 
 // This one was very simple. To get the profits, we just multiply the price per pound by the number of pounds. In code, I made the value of the ----Profit variables equal the variable for ----Price * ----Pounds.
 
